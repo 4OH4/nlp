@@ -1,2 +1,5 @@
 nltk
 gensim==3.8.1
+# testing only
+pytest==5.4.1
+hypothesis==5.7.0
