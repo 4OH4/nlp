@@ -52,7 +52,7 @@ def test_rank_documents2(search_terms):
 
 
 @given(search_terms=text(), document1=text(), document2=text())
-def test_rank_documents2(search_terms, document1, document2):
+def test_rank_documents3(search_terms, document1, document2):
     """
     Test similarity match - fuzzing
     """
