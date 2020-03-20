@@ -33,7 +33,7 @@ def test_rank_documents1():
 
 
 @given(search_terms=text())
-def test_rank_documents2(mocker, search_terms):
+def test_rank_documents2(search_terms=search_terms):
     """
     Test similarity match - fuzzing
     """
@@ -52,7 +52,9 @@ def test_rank_documents2(mocker, search_terms):
 
 
 @given(search_terms=text(), document1=text(), document2=text())
-def test_rank_documents2(mocker, search_terms, document1, document2):
+def test_rank_documents2(search_terms=search_terms, 
+                         document1=document1, 
+                         document2=document2):
     """
     Test similarity match - fuzzing
     """
